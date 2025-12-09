@@ -14,18 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioDummyAPI">
         <activity
-            android:name=".view.activity.productDetails.ProductDetailsActivity"
-            android:exported="false" />
-        <!--
-        <activity
-            android:name=".view.activity.ProductsActivity"
-            android:exported="false" />
-        -->
-        <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.activity.products.ProductsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
