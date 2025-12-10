@@ -1,5 +1,6 @@
 package com.skymobile.desafio_dummy_api
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.skymobile.desafio_dummy_api.databinding.ActivityMainBinding
-import com.skymobile.desafio_dummy_api.view.activity.products.ProductsActivity
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,11 +26,28 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        //navegação para tela de produtos
+        //navegar para tela de produtos
         binding.btnProdutos.setOnClickListener {
-            val intent = Intent(this, ProductsActivity::class.java)
-            startActivity(intent)
+            //navegateTo(ProdutosActivity())
+        }
+        //navegar para tela de clientes
+        binding.btnUsuarios.setOnClickListener {
+            //navegateTo(UsuariosActivity())
+        }
+        //navegar para tela de pedidos
+        binding.btnCart.setOnClickListener {
+            //navegateTo(CartActivity())
+        }
+        //navegar para tela de postagens
+        binding.btnPostagens.setOnClickListener {
+            //navegateTo(PostagensActivity())
         }
 
+
+    }
+
+    private fun navegateTo(activity: Activity) {
+        val intent = Intent(this, activity::class.java)
+        startActivity(intent)
     }
 }

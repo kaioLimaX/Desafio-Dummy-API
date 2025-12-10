@@ -1,15 +1,66 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local configuration files
 local.properties
+*.iml
+
+# Android Studio
+.idea/
+*.ipr
+*.iws
+out/
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keystore (⚠️ Mantenha fora do git!)
+*.jks
+*.keystore
+
+# Crashlytics / Firebase
+app/google-services.json
+app/src/**/google-services.json
+fabric.properties
+crashlytics-build.properties
+
+# Kotlin
+*.kt~
+
+# APKs / Bundles
+*.apk
+*.apks
+*.aab
+
+# NDK
+obj/
+
+# Jetpack Compose
+# (arquivos temporários e build intermediário)
+*.kotlin_module
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Signing
+signing/
+signing.properties
+
+# Misc
+*.orig
+*.rej
+
