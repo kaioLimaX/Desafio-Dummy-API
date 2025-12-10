@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.skymobile.desafio_dummy_api.databinding.ActivityMainBinding
+import com.skymobile.desafio_dummy_api.view.view.ProductsActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         //navegar para tela de produtos
         binding.btnProdutos.setOnClickListener {
-            //navegateTo(ProdutosActivity())
+            navegateTo(ProductsActivity())
         }
         //navegar para tela de clientes
         binding.btnUsuarios.setOnClickListener {

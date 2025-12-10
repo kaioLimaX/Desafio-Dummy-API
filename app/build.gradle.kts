@@ -45,13 +45,12 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-
     //retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    //gson converter
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     //coil
     implementation("io.coil-kt:coil:2.6.0")
-
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.recyclerview)
